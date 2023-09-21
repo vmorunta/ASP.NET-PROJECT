@@ -1,0 +1,11 @@
+﻿@model Post
+@{
+    ViewData["Title"] = "Message";
+}
+<h1>@Model.Title</h1>
+<h2>@Model.UserName has written the following message:</h2>
+<p>@Model.Text</p>
+
+<a asp-controller="Post" asp-action="Index" class="btn btn-primary" style="width:300px">
+    Back To The Forum
+</a>

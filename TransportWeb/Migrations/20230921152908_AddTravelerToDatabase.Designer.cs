@@ -12,7 +12,7 @@ using TransportWeb.Data;
 namespace TransportWeb.Migrations
 {
     [DbContext(typeof(ApplicationDBContext))]
-    [Migration("20230921150025_AddTravelerToDatabase")]
+    [Migration("20230921152908_AddTravelerToDatabase")]
     partial class AddTravelerToDatabase
     {
         /// <inheritdoc />
@@ -37,6 +37,10 @@ namespace TransportWeb.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Text")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
