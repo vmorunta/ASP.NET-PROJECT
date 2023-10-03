@@ -1,0 +1,57 @@
+﻿body {
+}
+
+.row{
+    background-color : white;
+    padding : 20px;
+    display: flex;
+}
+
+.col-25 {
+    
+    
+    flex:50;
+}
+
+.col-75 {
+    
+    
+    flex:50;
+}
+
+.rowImages {
+    background-image: url(sky.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position:center;
+    background-size: cover;
+    
+}
+
+.destination {
+    background-color: white;
+    display: flex;
+    border: groove;
+    border-color: lightblue;
+    align-items: stretch;
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+}
+
+
+.resizable-image {
+    max-width: 100%; /* Make images resizable within their container */
+    max-height: 200px;
+    height: auto; /* Maintain aspect ratio while resizing */
+    margin: 2px; /* Add spacing between images if desired */
+}
+
+.resizable-car {
+    max-width: 100%; /* Make images resizable within their container */
+    max-height: 400px;
+    height: auto; /* Maintain aspect ratio while resizing */
+    margin: 2px; /* Add spacing between images if desired */
+}
+
+.image-container {
+    text-align: center; /* Center-align the text */
+}

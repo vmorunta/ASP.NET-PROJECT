@@ -17,6 +17,7 @@ namespace TransportWeb.Controllers
         public IActionResult Index()
         {
             IEnumerable<Post> posts = db.Posts;
+            
             return View(posts);
         }
 
